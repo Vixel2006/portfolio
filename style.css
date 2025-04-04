@@ -1,0 +1,431 @@
+/* --- Global Styles & Resets --- */
+:root {
+    --primary-color: #007bff; /* Blue - Adjust as needed */
+    --secondary-color: #6c757d; /* Gray - Adjust as needed */
+    --light-bg: #f8f9fa;
+    --dark-text: #343a40;
+    --light-text: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --link-color: #0056b3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--light-bg); /* Use light background for overall page */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; color: var(--primary-color); }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky; /* Make header stick */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.logo:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--dark-text);
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Hero Section (#home) --- */
+.hero {
+    background-color: var(--card-bg); /* White background for contrast */
+    text-align: center;
+    padding-top: 80px; /* More padding at the top */
+    padding-bottom: 80px;
+}
+
+.hero h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.2em;
+}
+
+.hero .subtitle {
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+.hero .bio-short {
+    max-width: 600px;
+    margin: 0 auto 1.5em auto;
+    font-size: 1.1em;
+}
+
+.profile-photo { /* Optional: Style your photo */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: 3px solid var(--primary-color);
+}
+
+.cta-buttons .btn {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.cta-buttons .btn:hover {
+    text-decoration: none;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+}
+.btn-secondary:hover {
+     background-color: darken(var(--secondary-color), 10%);
+}
+
+.btn i { /* Icon spacing */
+    margin-right: 8px;
+}
+
+
+/* --- About Section (#about) --- */
+#about {
+    background-color: var(--light-bg);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between columns */
+    margin-top: 2em;
+}
+
+.skill-category {
+    flex: 1; /* Allows categories to grow */
+    min-width: 200px; /* Minimum width before wrapping */
+}
+
+.skill-category h4 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+.skill-category ul li {
+    margin-bottom: 0.5em;
+    background-color: var(--card-bg);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    display: inline-block; /* Make tags flow */
+    margin-right: 5px;
+}
+
+#about h3 { /* Education heading style */
+     margin-top: 2em;
+}
+
+/* --- Projects Section (#projects) --- */
+#projects {
+     background-color: var(--card-bg); /* White background */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    margin-top: 2em;
+}
+
+.project-card {
+    background-color: var(--light-bg); /* Light gray card background */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.project-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+.project-card p:last-of-type {
+    margin-bottom: 1.5em; /* More space before link */
+}
+
+.project-card strong {
+    color: var(--secondary-color);
+}
+
+.btn-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
+.btn-link i {
+    margin-left: 5px;
+}
+
+/* --- Contact Section (#contact) --- */
+#contact {
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 2em;
+    margin-bottom: 2em; /* Space before optional resume button */
+}
+
+.contact-links li {
+    margin-bottom: 1em;
+}
+
+.contact-links a {
+    font-size: 1.2em;
+    color: var(--dark-text);
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-links i {
+    margin-right: 10px;
+    color: var(--primary-color); /* Icon color */
+    width: 20px; /* Align icons */
+    text-align: center;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px; /* Space above footer */
+}
+
+footer p {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: var(--light-text);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+
+    header .container {
+        flex-direction: column;
+        align-items: center; /* Center logo and nav */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Space below logo */
+    }
+
+    nav ul {
+        margin-top: 10px; /* Space above nav links */
+        justify-content: center; /* Center nav links */
+        flex-wrap: wrap; /* Allow nav items to wrap */
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill categories */
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-buttons .btn {
+        display: block; /* Stack buttons */
+        width: 80%;
+        margin: 10px auto; /* Center buttons */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Slightly reduce nav spacing */
+    }
+}
+
+/* --- Navigation Active State --- */
+nav ul li a.active {
+    color: var(--primary-color); /* Use your primary color */
+    font-weight: bold; /* Make it stand out */
+    /* Optional: Add a subtle underline or border */
+    /* border-bottom: 2px solid var(--primary-color); */
+}
+
+/* Add some margin-top to sections for better scrollspy activation */
+/* Adjust the value based on your sticky header height */
+.section {
+    scroll-margin-top: 80px; /* Example: Adjust to match your header's height + some buffer */
+}
+
+#contact .resume-download {
+    margin-top: 2em; /* Add some space above the download link */
+}
+
+#contact .resume-download a {
+    color: var(--primary-color); /* Use primary color for the link */
+    font-weight: 500;
+    text-decoration: none; /* Remove default underline */
+    border: 1px solid var(--primary-color); /* Subtle border */
+    padding: 8px 15px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Allow padding and border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#contact .resume-download a:hover {
+    background-color: var(--primary-color); /* Fill background on hover */
+    color: var(--light-text); /* Change text color on hover */
+    text-decoration: none; /* Keep underline off on hover */
+}
+
+#contact .resume-download a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
