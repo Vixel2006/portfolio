@@ -429,3 +429,31 @@ nav ul li a.active {
     margin-right: 8px; /* Space between icon and text */
 }
 
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hide nav-links by default on mobile, show when .open */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--card-bg);
+  }
+  #nav-links.open {
+    display: flex;
+  }
+  #nav-links li {
+    margin: 15px 0;
+  }
+}

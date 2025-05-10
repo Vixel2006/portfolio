@@ -48,3 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
      // Trigger scroll once on load to set initial state
      window.dispatchEvent(new Event('scroll'));
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".hamburger");
+  const nav = document.getElementById("nav-links");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+});
