@@ -429,31 +429,62 @@ nav ul li a.active {
     margin-right: 8px; /* Space between icon and text */
 }
 
-
+/* --- Hamburger Menu Styling --- */
 .hamburger {
     display: none;
     background: none;
     border: none;
     font-size: 1.5em;
     cursor: pointer;
+    color: var(--dark-text); /* Match nav text color */
+    padding: 10px;
+    transition: color 0.3s ease;
 }
 
-/* Hide nav-links by default on mobile, show when .open */
+.hamburger:hover {
+    color: var(--primary-color); /* Match hover color */
+}
+
+/* Mobile menu styling */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: var(--card-bg);
-  }
-  #nav-links.open {
-    display: flex;
-  }
-  #nav-links li {
-    margin: 15px 0;
-  }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: var(--card-bg);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-links li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    #nav-links li a {
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+    }
+
+    #nav-links li a:hover {
+        background-color: var(--light-bg);
+    }
 }
