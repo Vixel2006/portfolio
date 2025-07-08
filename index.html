@@ -3,71 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf Shihata - AI Student</title>
+    <title>Yusuf Shihata - AI Researcher</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Your Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Updated Font Awesome for better icon support (including X) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
 <header>
-    <nav>
-        <div class="container">
-            <a href="#home" class="logo">Yusuf Shihata</a>
-            <!-- Add data-link attributes for JS highlighting -->
-            <button class="hamburger" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
-            </button>
+    <div class="container">
+        <a href="#home" class="logo">Yusuf Shihata</a>
+        <nav>
             <ul id="nav-links">
-                <li><a href="#home" data-link="home">Home</a></li>
-                <li><a href="#about" data-link="about">About</a></li>
-                <li><a href="#experience" data-link="experience">Experience</a></li>
-                <li><a href="#projects" data-link="projects">Projects</a></li>
-                <li><a href="#contact" data-link="contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
 </header>
 
 <main>
-    <!-- ========== Home Section ========== -->
     <section id="home" class="hero section">
         <div class="container">
-            <!-- Optional: Add your photo here - HIGHLY Recommended! -->
-            <!-- <img src="your-photo.jpg" alt="Yusuf Shihata" class="profile-photo"> -->
-            <h1>Yusuf Shihata</h1>
-            <p class="subtitle">AI Science Student, Open-Source Developer & Aspiring AI Researcher and Engineer</p>
-            <p class="bio-short">
-                Passionate about exploring the world of AI and Machine Learning, focusing on building intelligent systems and data-driven solutions. Currently deepening my knowledge in AI concepts and practical applications.
+            <!-- !!! IMPORTANT: Replace with your photo !!! -->
+            <h1 class="animate-on-scroll">Yusuf Shihata</h1>
+            <p class="subtitle animate-on-scroll">AI Researcher | Multimodal Architect | System Builder</p>
+            <p class="bio-short animate-on-scroll">
+                I design and build machine learning systems from scratch. Published my first research paper at 19 — introducing Gated Recursive Fusion, a novel multimodal architecture. Currently building Neura, a custom deep learning framework in CUDA.
             </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Projects</a>
-                <a href="https://github.com/yushi2006/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://x.com/this_yushi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i class="fa-brands fa-x-twitter"></i> X.com
-                </a>
+            <div class="cta-buttons animate-on-scroll">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
-        <div class="container">
+        <div class="section-bg"></div>
+        <div class="container animate-on-scroll">
             <h2>About Me</h2>
-            <p>
-                My journey into Artificial Intelligence started with a fascination for how machines can learn and make decisions. I'm currently pursuing Bachelor's degree in Artificial Intelligence at Kafr El-Sheikh University, where I'm building a strong foundation in core AI principles, machine learning algorithms, data analysis, and software development practices.
-            </p>
-            <p>
-                I'm particularly interested in areas like Natural Language Processing, Computer Vision, and Multimodal Learning and I enjoy tackling challenging problems and turning complex data into actionable insights. I'm always eager to learn new technologies and collaborate on innovative projects.
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 4em auto;">
+                My focus lies at the intersection of systems and intelligence: CUDA-based frameworks, efficient transformers, and novel multimodal reasoning strategies. I aim to make AI more interpretable, efficient, and structurally grounded—not just bigger.
             </p>
 
-            <h3>Skills</h3>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h4>Languages:</h4>
+                    <h4>Languages</h4>
                     <ul>
                         <li>Python</li>
                         <li>C++</li>
@@ -76,136 +68,107 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>AI/ML Libraries:</h4>
+                    <h4>AI/ML Libraries</h4>
                     <ul>
-                        <li>Scikit-learn</li>
                         <li>PyTorch</li>
-                        <li>Pandas, NumPy</li>
-                        <li>Matplotlib / Seaborn</li>
+                        <li>Hugging Face</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4>Tools & Concepts:</h4>
+                    <h4>Tools & Concepts</h4>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>Object-Oriented Programming (OOP)</li>
-                        <li>Parallel-Programming with CUDA</li>
-                        <li>FastAPI</li>
-                        <li>Databases with PostgreSQL</li>
+                        <li>CUDA</li>
                         <li>Docker</li>
-                        <li>Linux</li>
+                        <li>Git & GitHub</li>
+                        <li>System Arch</li>
+                        <li>PostgreSQL</li>
+                        <li>Linux/CLI</li>
                     </ul>
                 </div>
             </div>
 
-            <h3>Education</h3>
-             <p>
-                <strong>Bachelor's degree in Artificial Intelligence</strong><br>
-                Kafr El-Sheikh University<br>
-                Expected Graduation: Jan 2029
-             </p>
-             Learning about Computer Science Theory, Deep learning, and Computer Vision.</br>
-             GPA: 3.73
+            <h3 class="animate-on-scroll">Education</h3>
+            <p class="animate-on-scroll" style="text-align: center;">
+                <strong>Bachelor's in Artificial Intelligence</strong><br>
+                Kafr El-Sheikh University, Egypt (Expected Graduation: Jan 2029)<br>
+                Current GPA: 3.73
+            </p>
         </div>
     </section>
 
-    <!-- ========== Experience Section ========== -->
     <section id="experience" class="section">
-        <div class="container">
+        <div class="section-bg"></div>
+        <div class="container animate-on-scroll">
             <h2>Experience</h2>
             <div class="experience-grid">
                 <div class="experience-item">
+                    <h4>AI Researcher (Independent)</h4>
+                    <p><strong>May 2024 – Present</strong></p>
+                    <p>Published <em>Gated Recursive Fusion</em> (GRF), a transformer-based architecture for efficient multimodal fusion. Proposed a recursive and gated approach to reduce memory usage and improve interpretability. Submitted to ACM Multimedia 2025.</p>
+                    <a href="https://arxiv.org/abs/2507.02985" class="btn-link" target="_blank">View Paper <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="experience-item">
                     <h4>Open-Source Contributor</h4>
-                    <p><strong>Huggingface</strong><br>
-                    June 2025 – Present</p>
-                    <p>Contributed to Huggingface transformers library, fixed critical bugs in the QA pipeline which is a core part of the library, implementing unit-tests for various parts of the library, worked on refactoring docs for different models, working on integerating new models and features to expand the library further. This experience tought me how to communicate effictively with other engineers, how to handle large codebases, and also how to understand the tradeoffs of certain design choice.</p>
-                    <p><strong>Technologies:</strong> Git, Python, CUDA, PyTorch</p>
-                    <a href="https://github.com/yushi2006/transformers" target="_blank" rel="noopener noreferrer" class="btn-link">View Contributions <i class="fab fa-github"></i></a>
+                    <p><strong>Hugging Face — Jun 2024 – Present</strong></p>
+                    <p>Working on expanding core functionality in Transformers: adding features to the core library pipelines, fixing bugs in QA pipelines, refactoring modules, and improving test coverage.</p>
+                    <a href="https://github.com/yushi2006/transformers" class="btn-link" target="_blank">View Contributions <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== Projects Section ========== -->
     <section id="projects" class="section">
+        <div class="section-bg"></div>
         <div class="container">
             <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on. You can find more details and code on my GitHub.</p>
             <div class="projects-grid">
-
-                <!-- Project Card Example 1 -->
-                <div class="project-card">
-                    <h4>IMDB Movie Review Sentiment Analyzer</h4>
-                    <p>Implemented an Encoder-Transformer Architecture from scratch using PyTorch and used it to do sentiment analysis on the IMDB movie review achieving 85% accuracy after only 5 epochs.</p>
-                    <p><strong>Technologies:</strong> Python, PyTorch, NumPy, Matplotlib, NLTK, Huggingfaces</p>
-                    <p><strong>Reference:</strong><a href="https://arxiv.org/pdf/1706.03762v7"> Attention is All you need</a></br>
-                    <a href="https://github.com/yushi2006/IMDB-sentiment-analysis-with-transformers" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
-                    <!-- <a href="#" class="btn-link">Live Demo</a> -->
+                <div class="project-card animate-on-scroll">
+                    <h4>Gated Recursive Fusion (GRF)</h4>
+                    <p>A multimodal transformer that fuses modalities recursively with a gated mechanism. Designed for low-compute environments like robotics and perception stacks.</p>
+                    <p><strong>Tech:</strong> Python, PyTorch</p>
+                    <a href="https://github.com/yushi2006/GRF" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Project Card Example 2 --> <div class="project-card">
-                    <h4>ViT: Pretrained Image Classifier</h4>
-                    <p>Implementing a Vision Transformer from scratch using PyTorch and using it as a feature extractor for various recognition tasks.</p>
-                    <p><strong>Technologies:</strong> Python, PyTorch, Matplotlib, Numpy</p>
-                    <p><strong>Reference:</strong><a href="https://arxiv.org/pdf/2010.11929v2"> An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</a></br>
-                    <a href="https://github.com/yushi2006/ViT" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
+                <div class="project-card animate-on-scroll">
+                    <h4>Neura: DL Framework</h4>
+                    <p>A PyTorch-inspired deep learning framework built with Python and CUDA. Includes tensor operations, GPU kernels, and a basic autograd engine for research.</p>
+                    <p><strong>Tech:</strong> Python, CUDA, C++</p>
+                    <a href="https://github.com/yushi2006/Neura" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Project Card Example 3 -->
-                <div class="project-card">
-                    <h4>Diffusion-GAN</h4>
-                    <p>Implemented a Diffusion-GAN architecture for hand-written digits generation, by implemented a noise injection mechanism to add the diffusion concept to the GAN models, the model was able to achieve high results after a few steps.</p>
-                    <p><strong>Technologies:</strong> Python, PyTorch</p>
-                    <p><strong>Reference:</strong><a href="https://arxiv.org/pdf/2206.02262v4"> Diffusion-GAN: Training GANs with Diffusion</a></br>
-                    <a href="https://github.com/yushi2006/Diffusion-GAN" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
+                <div class="project-card animate-on-scroll">
+                    <h4>PoktAid</h4>
+                    <p>Offline-first mobile app that combines speech recognition, computer vision, and LLMs to assist users in medical first-aid situations on-device.</p>
+                    <p><strong>Tech:</strong> React Native, TFLite</p>
+                    <a href="https://github.com/yushi2006/PoktAid" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                 <!-- Project Card Example 4 -->
-                <div class="project-card">
-                    <h4>MulT: Modality Fusion for Multimodal Tasks</h4>
-                    <p>Currently working on implementing a Multimodal Transformer that can do modality fusion for unaligned language squences, I'm planning to use it for Emotion Recognition using the CREMA-D dataset as a benchmark dataset.</p>
-                    <p><strong>Technologies:</strong> Python, PyTorch, Huggingfaces, NLTK</p>
-                    <p><strong>Reference:</strong><a href="https://arxiv.org/pdf/1906.00295v1"> Multimodal Transformer for Unaligned Multimodal Language Sequences</a></br>
-                    <a href="https://github.com/yushi2006/MulT" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
+                <div class="project-card animate-on-scroll">
+                    <h4>AuditGPT</h4>
+                    <p>A RAG system for financial/legal auditing. Integrates document chunking, vector search, and a fine-tuned LLM to answer complex queries from uploaded files.</p>
+                    <p><strong>Tech:</strong> LangChain, FAISS</p>
+                    <a href="https://github.com/yushi2006/AuditGPT" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <div class="project-card">
-                    <h4>Telco Churn Broadcasting</h4>
-                    <p>A complete Data Science Project in which I did EDA on the Telco Customer Churn dataset and creating an ML model that can predict churn with recall of 0.73, by applying feature engineering and experiementing with multiple models.</p>
-                    <p><strong>Technologies:</strong> Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn</p>
-                    <a href="https://github.com/yushi2006/Telco-Churn-Broadcasting" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-
-                
-                <div class="project-card">
-                    <h4>Neura</h4>
-                    <p>A Full DL Framework built in CUDA and Python that inspired by PyTorch and Jax, adding some functionalities that can simplify the prototyping. with CPU and GPU backends. The project aims to be a lightwieght alternative to PyTorch.</p>
-                    <p><strong>Technologies:</strong> Python, CUDA, C++</p>
-                    <a href="https://github.com/yushi2006/Neura" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ========== Contact Section ========== -->
     <section id="contact" class="section">
-        <div class="container">
+        <div class="section-bg"></div>
+        <div class="container animate-on-scroll">
             <h2>Get In Touch</h2>
-            <p>Feel free to reach out if you'd like to connect, collaborate, or just chat about AI!</p>
-            <ul class="contact-links">
-                <li><a href="yusufshihata2006@gmail.com"><i class="fas fa-envelope"></i> yusufshihata2006@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/yushi2006/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://x.com/this_yushi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X.com</a></li>
-            </ul>
-            <p class="resume-download">
-                <a href="./static/resume.pdf" download>
-                    <i class="fas fa-file-arrow-down"></i> Download Resume
-                </a>
+            <p style="text-align: center; max-width: 700px; margin: -1em auto 3em auto;">
+                If you're building something serious in AI, need a collaborator, or just want to connect — reach out. I'm always open to new ideas and challenges.
             </p>
+            <ul class="contact-links">
+                <li><a href="mailto:yusufshihata2006@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/yushi2006/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://x.com/this_yushi" target="_blank"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
+            </ul>
+            <div class="resume-download">
+                <a href="./static/resume.pdf" download><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+            </div>
         </div>
     </section>
 </main>
@@ -213,17 +176,14 @@
 <footer>
     <div class="container">
         <p>© 2024 Yusuf Shihata. All rights reserved.</p>
-        <!-- Optional: Repeat social links -->
-         <div class="footer-links">
-             <a href="https://github.com/yushi2006/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-             <!-- Added X.com Link -->
-             <a href="https://x.com/this_yushi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-         </div>
+        <div class="footer-links">
+            <a href="https://github.com/yushi2006/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/this_yushi" target="_blank" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </div>
 </footer>
 
-<!-- Add the JavaScript file link here -->
 <script src="script.js"></script>
-
 </body>
 </html>
