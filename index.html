@@ -3,186 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf Shihata - AI Researcher</title>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Fonts -->
+    <title>Vixel // Yusuf Shihata - Architecting Nawah (نواة)</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- Your Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <a href="#home" class="logo">Yusuf Shihata</a>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
+    <div id="neural-background"></div>
 
-<main>
-    <section id="home" class="hero section">
+    <header class="main-header">
         <div class="container">
-            <!-- !!! IMPORTANT: Replace with your photo !!! -->
-            <h1 class="animate-on-scroll">Yusuf Shihata</h1>
-            <p class="subtitle animate-on-scroll">ML Researcher | ML Engineer | Mobile Developer</p>
-            <p class="bio-short animate-on-scroll">
-                I design and build machine learning systems from scratch. Published my first research paper at 19 — introducing Gated Recursive Fusion, a novel multimodal architecture. Currently building Neura, a custom deep learning framework in CUDA.
-            </p>
-            <div class="cta-buttons animate-on-scroll">
-                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
-                <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-            </div>
+            <a href="#home" class="logo">VIXEL</a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">/home</a></li>
+                    <li><a href="#nawah" class="nav-link">/nawah</a></li>
+                    <li><a href="#archive" class="nav-link">/archive</a></li>
+                    <li><a href="#contact" class="nav-link">/contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
         </div>
-    </section>
+    </header>
 
-    <section id="about" class="section">
-        <div class="section-bg"></div>
-        <div class="container animate-on-scroll">
-            <h2>About Me</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 4em auto;">
-                My focus lies at the intersection of systems and intelligence: CUDA-based frameworks, efficient transformers, and novel multimodal reasoning strategies. I aim to make AI more interpretable, efficient, and structurally grounded—not just bigger.
-            </p>
-
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h4>Languages</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>AI/ML Libraries</h4>
-                    <ul>
-                        <li>PyTorch</li>
-                        <li>Hugging Face</li>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>Matplotlib</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Tools & Concepts</h4>
-                    <ul>
-                        <li>CUDA</li>
-                        <li>Docker</li>
-                        <li>Git & GitHub</li>
-                        <li>System Arch</li>
-                        <li>PostgreSQL</li>
-                        <li>Linux/CLI</li>
-                    </ul>
+    <main>
+        <section id="home" class="hero section">
+            <div class="container">
+                <h1>VIXEL</h1>
+                <p class="subtitle">Architecting the Core of Tomorrow's AI</p>
+                <p class="bio-short">
+                    I'm Yusuf Shihata, a 19-year-old engineer and researcher from Egypt. I'm driven to build AI from first principles. My entire focus is on architecting <strong>Nawah</strong>, an open-source deep learning framework designed for clarity, speed, and the next decade of artificial intelligence.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#nawah" class="btn"><i class="fas fa-atom"></i> Explore Nawah</a>
+                    <a href="https://github.com/Vixel2006/" class="btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
+        </section>
 
-            <h3 class="animate-on-scroll">Education</h3>
-            <p class="animate-on-scroll" style="text-align: center;">
-                <strong>Bachelor's in Artificial Intelligence</strong><br>
-                Kafr El-Sheikh University, Egypt (Expected Graduation: Jan 2029)<br>
-                Current GPA: 3.73
-            </p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="section-bg"></div>
-        <div class="container animate-on-scroll">
-            <h2>Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <h4>AI Researcher (Independent)</h4>
-                    <p><strong>May 2024 – Present</strong></p>
-                    <p>Published <em>Gated Recursive Fusion</em> (GRF), a transformer-based architecture for efficient multimodal fusion. Proposed a recursive and gated approach to reduce memory usage and improve interpretability. Submitted to ACM Multimedia 2025.</p>
-                    <a href="https://arxiv.org/abs/2507.02985" class="btn-link" target="_blank">View Paper <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="experience-item">
-                    <h4>Open-Source Contributor</h4>
-                    <p><strong>Hugging Face — Jun 2024 – Present</strong></p>
-                    <p>Working on expanding core functionality in Transformers: adding features to the core library pipelines, fixing bugs in QA pipelines, refactoring modules, and improving test coverage.</p>
-                    <a href="https://github.com/yushi2006/transformers" class="btn-link" target="_blank">View Contributions <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="section-bg"></div>
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card animate-on-scroll">
-                    <h4>Gated Recursive Fusion (GRF)</h4>
-                    <p>A multimodal transformer that fuses modalities recursively with a gated mechanism. Designed for low-compute environments like robotics and perception stacks.</p>
-                    <p><strong>Tech:</strong> Python, PyTorch</p>
-                    <a href="https://github.com/yushi2006/GRF" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="project-card animate-on-scroll">
-                    <h4>Neura: DL Framework</h4>
-                    <p>A PyTorch-inspired deep learning framework built with Python and CUDA. Includes tensor operations, GPU kernels, and a basic autograd engine for research.</p>
-                    <p><strong>Tech:</strong> Python, CUDA, C++</p>
-                    <a href="https://github.com/yushi2006/Neura" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="project-card animate-on-scroll">
-                    <h4>PoktAid</h4>
-                    <p>Offline-first mobile app that combines speech recognition, computer vision, and LLMs to assist users in medical first-aid situations on-device.</p>
-                    <p><strong>Tech:</strong> React Native, TFLite</p>
-                    <a href="https://github.com/yushi2006/PoktAid" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="project-card animate-on-scroll">
-                    <h4>AuditGPT</h4>
-                    <p>A RAG system for financial/legal auditing. Integrates document chunking, vector search, and a fine-tuned LLM to answer complex queries from uploaded files.</p>
-                    <p><strong>Tech:</strong> LangChain, FAISS</p>
-                    <a href="https://github.com/yushi2006/AuditGPT" target="_blank" class="btn-link">GitHub <i class="fas fa-arrow-right"></i></a>
+        <section id="nawah" class="section">
+            <div class="container">
+                <h2 class="section-title"><span>01.</span> Project Nawah</h2>
+                <div class="card-grid">
+                    <div class="info-card">
+                        <h3>CORE PRINCIPLES</h3>
+                        <ul>
+                            <li>Clarity Above All</li>
+                            <li>First-Principles Design</li>
+                            <li>High-Performance Kernels</li>
+                            <li>Uncompromised Extensibility</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>TECHNOLOGY STACK</h3>
+                        <ul>
+                            <li>Python (Frontend API)</li>
+                            <li>C++ (Core Logic)</li>
+                            <li>CUDA (GPU Kernels)</li>
+                            <li>Systems Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>THE VISION</h3>
+                        <ul>
+                            <li>Standard for Education</li>
+                            <li>Hub for AI Research</li>
+                            <li>Engine for Products</li>
+                            <li>Thriving OSS Community</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="section-bg"></div>
-        <div class="container animate-on-scroll">
-            <h2>Get In Touch</h2>
-            <p style="text-align: center; max-width: 700px; margin: -1em auto 3em auto;">
-                If you're building something serious in AI, need a collaborator, or just want to connect — reach out. I'm always open to new ideas and challenges.
-            </p>
-            <ul class="contact-links">
-                <li><a href="mailto:yusufshihata2006@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                <li><a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/yushi2006/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://x.com/this_yushi" target="_blank"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
-            </ul>
-            <div class="resume-download">
-                <a href="./static/resume.pdf" download><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+        <section id="archive" class="section">
+            <div class="container">
+                <h2 class="section-title"><span>02.</span> Project Archive</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-sitemap"></i>
+                            <h3>Gated Recursive Fusion (GRF)</h3>
+                        </div>
+                        <p>A multimodal transformer that fuses modalities recursively with a gated mechanism, designed for low-compute environments.</p>
+                        <div class="card-footer">
+                            <span class="tech-stack">PyTorch</span>
+                            <a href="https://github.com/Vixel2006/GRF" target="_blank" aria-label="GRF on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>PoktAid</h3>
+                        </div>
+                        <p>An offline-first mobile app using on-device Speech Recognition, CV, and LLMs to assist in medical first-aid situations.</p>
+                        <div class="card-footer">
+                            <span class="tech-stack">React Native, TFLite</span>
+                             <a href="https://github.com/Vixel2006/PoktAid" target="_blank" aria-label="PoktAid on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                         <div class="card-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>AuditGPT</h3>
+                        </div>
+                        <p>A RAG system for financial auditing. Integrates document chunking, vector search, and a fine-tuned LLM to query uploaded files.</p>
+                        <div class="card-footer">
+                            <span class="tech-stack">LangChain, FAISS</span>
+                            <a href="https://github.com/Vixel2006/AuditGPT" target="_blank" aria-label="AuditGPT on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
 
-<footer>
-    <div class="container">
-        <p>© 2024 Yusuf Shihata. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="https://github.com/yushi2006/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/this_yushi" target="_blank" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-    </div>
-</footer>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title"><span>03.</span> Open Comms</h2>
+                <p class="contact-prompt">I'm actively seeking collaborators and contributors for Nawah. Let's connect.</p>
+                <div class="contact-grid">
+                    <a href="mailto:yusufshihata2006@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <p>yusufshihata2006@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <p>/in/yusufmohamed2006</p>
+                    </a>
+                    <a href="https://github.com/Vixel2006" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <p>/Vixel2006</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<script src="script.js"></script>
+    <footer class="main-footer-bottom">
+        <div class="container footer-content">
+            <p>DESIGNED & BUILT BY YUSUF SHIHATA (VIXEL)</p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
