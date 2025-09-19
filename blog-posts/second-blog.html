@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Philosophy of System Engineer - Vixel Blog</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css"> <!-- Adjust path if needed -->
+    <style>
+        /* Specific styles for blog post content within the page */
+        .blog-post-content {
+            max-width: 80%;   /* Takes 80% of the available width */
+            width: 100%;      /* Ensure it respects max-width and fluidly shrinks */
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--surface-color);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow-light);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+        /* Add a maximum absolute width for very large screens */
+        @media (min-width: 1200px) { /* Adjust breakpoint as needed */
+            .blog-post-content {
+                max-width: 1000px; /* Cap at 1000px for extremely wide screens */
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-post-content {
+                max-width: 95%; /* Adjust for smaller screens to give more room */
+                padding: 25px; /* Adjust padding on smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .blog-post-content {
+                padding: 20px;
+            }
+        }
+
+        .blog-post-content h1, .blog-post-content h2, .blog-post-content h3 {
+            color: var(--text-primary);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            line-height: 1.3;
+        }
+        .blog-post-content h1 { font-size: 2.5rem; }
+        .blog-post-content h2 { font-size: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em;}
+        .blog-post-content h3 { font-size: 1.5rem; }
+        .blog-post-content p {
+            margin-bottom: 1em;
+        }
+        .blog-post-content ul, .blog-post-content ol {
+            margin-left: 2em;
+            margin-bottom: 1em;
+        }
+        .blog-post-content ul li {
+            list-style-type: disc;
+        }
+        .blog-post-content ol li {
+            list-style-type: decimal;
+        }
+        .blog-post-content pre { /* Style for code blocks */
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 1em;
+            font-family: var(--font-mono);
+            font-size: 0.9em;
+            color: var(--text-primary);
+        }
+        .blog-post-content code { /* Inline code */
+            font-family: var(--font-mono);
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .blog-post-meta {
+            text-align: center;
+            color: #ffffff; /* Changed date text to white */
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+        /* The span for the bullet point will automatically inherit white if present,
+           but since we removed the author, there's no bullet point to worry about */
+        /* .blog-post-meta span {
+            margin: 0 0.5em;
+            color: #ffffff;
+        } */
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo"><i class="fas fa-microchip"></i> Vixel</a> <!-- Link back to home -->
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="../index.html#about" class="nav-link">About</a></li>
+                    <li><a href="../index.html#work" class="nav-link">Work</a></li>
+                    <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <!-- Mobile CTA button removed from here -->
+            </nav>
+            <a href="../index.html#contact" class="header-cta-button">Hire Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-banner" style="padding: 60px 0; border-radius: 0;">
+            <div class="container">
+                <h1>The Philosophy of System Engineer</h1>
+                <p class="subtitle">Exploring the importance of building AI systems from foundational concepts rather than relying solely on existing abstractions.</p>
+                <p class="blog-post-meta">2025-09-15</p> <!-- Author and bullet removed -->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="blog-post-content">
+                    <h2>Introduction to First Principles</h2>
+<p>In the realm of artificial intelligence, a common approach is to build upon existing frameworks and libraries. While efficient, this can sometimes lead to a superficial understanding of the underlying mechanisms...</p>
+<h3>Why First Principles?</h3>
+<p>Elon Musk often advocates for "first principles thinking," which involves breaking down complex problems to their fundamental truths and then reasoning up from there. For AI, this means understanding the mathematical and computational underpinnings...</p>
+<p>This blog post will delve deeper into...</p>
+<p>this is my first blog post on my webiste</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo" style="color: var(--footer-link-color); margin-bottom: 15px;"><i class="fas fa-microchip"></i> Vixel</a>
+                    <p style="margin-bottom: 20px;">Yusuf Shihata is an AI Researcher & Software Engineer focused on building open-source deep learning infrastructure.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.linkedin.com/in/yusufmohamed2006/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Vixel2006" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Other Pages</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#work">Work</a></li>
+                        <li><a href="../index.html#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> yusufshihata2006@gmail.com</p>
+                        <p><i class="fab fa-linkedin"></i> /in/yusufmohamed2006</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Copyright All rights reserved by <a href="../index.html">Yusuf Shihata (Vixel).</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script> <!-- Adjust path if needed -->
+</body>
+</html>
