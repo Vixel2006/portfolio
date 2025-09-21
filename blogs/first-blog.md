@@ -1,52 +1,61 @@
 ---
-title: The Philosophy of First Principles in AI
-date: 2025-09-15
-excerpt: Exploring the importance of building AI systems from foundational concepts rather than relying solely on existing abstractions.
+title: The evil of Complexity
+date: 2025-09-21
+excerpt: Exploring why complexity is the engine of our current day world and why it's bad.
 ---
 
-## Introduction to First Principles
+Every time you file taxes, install software, or try to cancel a subscription, you’ve seen it: the creeping monster of complexity.
 
-In the realm of artificial intelligence, a common approach is to build upon existing frameworks and libraries. While efficient, this can sometimes lead to a superficial understanding of the underlying mechanisms. When developers rely too heavily on abstractions, they risk treating AI as a "black box"—a tool that works without a real grasp of why it works.
+## Introduction
 
-First principles thinking flips this approach on its head. Instead of stacking layers of existing knowledge, it encourages breaking complex problems down to their most fundamental truths and reasoning upward from there. In AI, this philosophy can transform not just how we build systems, but how we innovate.
+So what exactly is complexity, complexity is simply over-engineering simple stuff, like making a fucking toothbrush that upload your brushing data to the cloud as if you need a neural net to tell you that you missed a fucking spot, Want to replace a headlight? Good luck—you often have to remove half the bumper because the design makes a trivial task absurdly complex.
 
----
+Cooking is actually a pretty simple human activity—fire + ingredients. But the system twists it. Fast food and restaurants promise convenience (“skip the hassle!”). That convenience then leads to health problems. The answer to industrialized overeating isn’t just “eat simpler,” it’s sold as gym memberships, personal trainers, supplements, and specialized routines. We literally created an entire economy to undo the damage of another economy.
 
-## Why First Principles Matter in AI
+Being “fit” isn’t even enough. Once you survive the food-gym cycle, you’re told your body is just a mannequin for brands. Clothes aren’t protection anymore; they’re status displays. You need the “Kelvin Klein v2.0 ass,” as you put it, to be considered a full participant in modern society.
 
-Elon Musk often advocates for "first principles thinking," a method of reasoning that asks, "What do we *really* know to be true?" Applied to AI, this means understanding the math, logic, and computation at the core of the technology—not just the frameworks that sit on top of them.  
-
-Consider neural networks. A beginner might start with PyTorch or TensorFlow tutorials, copy code, and tweak hyperparameters. That’s useful for rapid experimentation. But without grasping gradient descent, backpropagation, or the reasons for activation functions, one is essentially flying blind. First principles push us to ask: why does backprop work? Why do certain architectures generalize better? Why does optimization behave unpredictably in high dimensions?
-
-When you think from first principles, you don't just follow trends—you *create* them. You might develop new architectures, optimization techniques, or even entirely new paradigms of learning that aren't bound by what the community currently uses.
+And don't get me started on law. Rules are supposed to keep society fair, but instead of fixing broken ones, lawmakers just keep patching them until the whole thing looks like spaghetti code. Want to start a small business? You 'll need a team of overpriced lawyers in shiny suits just to make sure you don't get crushed by red tape before you even sell a coffee.
 
 ---
 
-## From Abstract to Concrete
+## The Root of Complexity
 
-First principles thinking in AI is not about rejecting frameworks; it’s about understanding them at a fundamental level. Here’s a step-by-step approach:
+I’d like to start with a quote from Steve Jobs: “People don’t know what they want until you show them.” That line doesn’t just describe Apple’s marketing—it describes the entire economy. You don’t need to sell me your solution, you just need to sell me the problem. If you can complicate the problem enough, suddenly your trivial fix becomes a “must-have” product. That’s how you turn a toothbrush into a “cloud-connected lifestyle device.”
 
-1. **Identify the Problem:** Break down what you’re trying to solve to its essence. For example, "We need a model to classify images" becomes "We need a function that maps high-dimensional input to labels with minimal error."
-   
-2. **Understand the Core Mechanisms:** Study the underlying mathematics. Linear algebra, probability, calculus, and optimization aren’t just academic—they are the backbone of every AI system.
-   
-3. **Question Assumptions:** Why use convolution for images? Why transformers over RNNs? Don’t take common practices at face value—analyze their rationale.
-   
-4. **Build Up, Step by Step:** With foundational understanding, construct your models, experimenting with variations and improvements from your own reasoning rather than just imitating existing architectures.
+Complexity is manufactured because it creates demand. Make learning computer science look like a decade-long ordeal of degrees and certificates, and suddenly schools, training companies, and recruiters have a steady business. Even though plenty of people self-study the same material in a few years, the system convinces you the complex route is the only legitimate one.
+
+Even our minds get caught in the trap. Life advice is often stupidly simple—eat decently, move your body, don’t waste time on crap, be honest with yourself. But we complicated it so much that now there’s an entire industry selling us “self-help.” 300-page books that could be a tweet, TED talks telling you “how to unlock your inner power,” courses that basically say “wake up early.” They don’t give you wisdom, they give you the illusion of progress—just enough dopamine to keep you feeling like you’re fixing your life without actually fixing shit. That’s the genius of complexity: it makes you pay to hear what you already knew.
 
 ---
 
-## The Edge of Independent Thinking
+## The Costs of Complexity
 
-When you reason from first principles, you stop being a consumer of AI knowledge and start becoming a creator. Instead of relying on the "recipes" of popular libraries, you internalize the essence of what makes AI tick. This is where real innovation happens—where you’re not just improving models incrementally, but potentially redefining them.
+Complexity is a weird beast. Everybody benefits from it—until they don’t. Entrepreneurs profit by selling you “solutions” to problems they made you believe were impossible to solve alone. Employees cling to complexity because the more moving parts a company has, the more jobs it “needs” to keep it alive. Managers thrive on it because more chaos means more layers of control, which means more titles, more meetings, more bullshit.
 
-In a world where everyone is chasing pre-trained models and following trends, understanding AI from the ground up is a competitive edge. It’s the difference between using AI and contributing to the evolution of intelligence itself.
+But here’s the catch: the system always turns around and eats the people who feed it. The entrepreneur who sells you that over-engineered app has to keep inventing newer, shinier problems to stay relevant. The employee working in a company bloated by unnecessary complexity spends their life stuck maintaining some fragile monster of a system instead of doing work that actually matters. Even the manager who benefits from the chaos is chained to it—endless KPIs, endless reports, endless anxiety about keeping the whole tower from collapsing.
+
+And for the rest of us? We pay for this circus in money, time, and sanity. We’re tricked into believing life is impossible without the layers of junk complexity piled onto the basics—food, health, work, education. Everyone gets a slice of the short-term benefit, but in the long run, everyone gets fucked.
+
 
 ---
 
+## Escaping Complexity
+
+So how do you escape this mess? First, figure out the difference between need and want. That alone kills 80% of the bullshit. You don’t “need” a smart fridge, a $200 toothbrush, or a degree with seventeen elective requirements. You need food, health, shelter, and work you don’t hate. Everything outside that circle is just horseshit somebody packaged as a lifestyle upgrade.
+
+Second, go minimalist—not in the Instagram-aesthetic, beige-sweater way, but in the practical way: consume less, produce more. Cook your own food. Fix your own stuff. Stop paying subscriptions for things you could replace with a habit.
+
+Third, cut the society-status leash. Complexity thrives because people are terrified of what others think. If you stop caring about keeping up with the consuming pigs around you, you suddenly see how dumb the whole treadmill looks.
+
+And the real trick? Pause and ask: “Is this a real necessity for my life?” Nine times out of ten, the answer is no. You think you need the gym, but you could just run a couple miles and do push-ups. You think you need a brand wardrobe, but you could just wear clothes that last. You think you need the latest app, but you could just not. Complexity collapses fast once you realize how little of it you actually have to play along with.
+
+---
 ## Conclusion
 
-First principles thinking isn’t easy. It demands patience, curiosity, and a willingness to question the status quo. But in AI, it’s transformative. By starting from the foundational truths, you gain clarity, creativity, and control over your work.  
+Complexity is the greatest scam of our time. We turn simple truths into billion-dollar industries, and then wonder why we’re stressed, broke, and stuck. We built a world where brushing your teeth needs a data plan, eating requires a fitness subscription, and living demands an endless pile of forms, apps, and rules. Even our minds aren’t safe—we read 300 pages of “self-help” just to be told to sleep earlier and stop scrolling TikTok.
 
-So the next time you’re tempted to copy-paste code from a framework or follow the latest trend, ask yourself: *What is the essence of this problem?* Build from there, and you might just pioneer something entirely new.
+But here’s the thing: the chains are fake. Most of the problems we think we need “solutions” for aren’t problems at all. They’re distractions, carefully engineered to keep us consuming, working, and obeying. Complexity feeds everyone in the short term, but in the end it devours us all.
 
+The only real way out is brutal honesty. Strip life down to what you need, not what you’re sold. Reject the circus. Consume less, make more. Stop living for the approval of pigs on the same treadmill. Once you stop buying into the lie, you’ll see how much of this “complex” world collapses into nothing.
+
+Complexity isn’t some unstoppable monster—it’s just smoke and mirrors. And the moment you stop playing along, it disappears.
